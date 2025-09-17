@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Ticket Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="payment">
+
+  <div class="payment-box">
+    <h2>Payment</h2>
+
+    <form action="success.html" method="POST">
+
+      <label for="name">Passenger Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter passenger name" required>
+
+      <label for="train">Train Number</label>
+      <input type="text" id="train" name="train" placeholder="Train number" required>
+
+      <label for="method">Payment Method</label>
+      <select id="method" name="method" required>
+        <option value="credit">Credit Card</option>
+        <option value="debit">Debit Card</option>
+        <option value="upi">UPI</option>
+        <option value="netbanking">Net Banking</option>
+      </select>
+
+        <a href="successfull.html" class="btn">Pay Now</a>
+        <button type="reset" class="btn">New</button>
+        <br><br>
+        <a href="seat.html" class="btn">Seat</a>
+
+      <p class="footer-text">Need help? <a href="https://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html">Contact Support</a></p>
+    </form>
+  </div>
+
+</body>
+</html>
